@@ -1,0 +1,28 @@
+﻿<Window x:Class="FormularioTesteWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormularioTesteWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Autenticar" HorizontalAlignment="Left" Margin="16,41,0,0" VerticalAlignment="Top" Height="36" Width="127" Click="Button_Click"/>
+        <TextBox x:Name="txtResultado" HorizontalAlignment="Left" Height="130" Margin="16,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="762"/>
+        <Label Content="Bearer Token" HorizontalAlignment="Left" Margin="16,95,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtClientKey" HorizontalAlignment="Left" Margin="262,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.039"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Client Key" HorizontalAlignment="Left" Margin="194,46,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBearerToken" HorizontalAlignment="Left" Height="96" Margin="16,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="762"/>
+        <Button x:Name="btnRegistrarBoleto" Content="Registrar boleto" Height="42" Margin="16,225,657,0" VerticalAlignment="Top" Click="btnRegistrarBoleto_Click"/>
+
+    </Grid>
+</Window>
